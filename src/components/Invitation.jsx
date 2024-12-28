@@ -1,6 +1,6 @@
 import React from "react";
-import groom from "../images/Shubh.jpeg";
-import bride from "../images/CJK.jpeg";
+import groom from "../images/Abhay.jpeg";
+import bride from "../images/Anu.jpeg";
 import brideback from "../images/brideback.jpg";
 import { IoIosStar } from "react-icons/io";
 const Invitation = () => {
