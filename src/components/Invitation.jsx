@@ -36,9 +36,9 @@ const Invitation = () => {
                   />
                 </div>
                 <div className="desc-groom">
-                  <h3>Shubham Kadam</h3>
-                  <h5>S/O Dattarray Kadam</h5>
-                  <h5>Shobha Kadam</h5>
+                  <h3>Abhay Basutkar</h3>
+                  <h5>S/O Shashikant Basutkar</h5>
+                  <h5>Seema Basutakar</h5>
                 </div>
               </div>
               <p className="center-text heartp">
@@ -51,9 +51,9 @@ const Invitation = () => {
                   <img src={bride} alt="bride" className="img-responsive" />
                 </div>
                 <div className="desc-bride">
-                  <h3>Chaitali Jagtap</h3>
-                  <h5>D/O Santosh Jagtap</h5>
-                  <h5>Savita Jagtap</h5>
+                  <h3>Anushree Putankar</h3>
+                  <h5>D/O Devaraj Putankar</h5>
+                  <h5>Vidya Putankar</h5>
                 </div>
               </div>
             </div>

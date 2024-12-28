@@ -36,12 +36,11 @@ const WeadingDetails = () => {
                   <div className="timeline-heading">
                     <h3 className="timeline-title">First We Met</h3>
                     <MdOutlineDateRange size={15} className="iconm" />
-                    <span className="date">June 22, 2023</span>
+                    <span className="date">September 16, 2024</span>
                   </div>
                   <div className="timeline-body">
                     <p>
-                      After 2 hours of drive we met in her home with full of
-                      family members and it is how all started.
+                      As it's an arrenge marriage setup I met her in their home for the first time.
                     </p>
                   </div>
                 </div>
@@ -55,7 +54,7 @@ const WeadingDetails = () => {
                   <div className="timeline-heading">
                     <h3 className="timeline-title">Engagement Ceremony</h3>
                     <MdOutlineDateRange size={15} className="iconm" />
-                    <span className="date">July 16, 2023</span>
+                    <span className="date">October 21, 2024</span>
                   </div>
                   <div className="timeline-body">
                     <p>
@@ -75,7 +74,7 @@ const WeadingDetails = () => {
                   <div className="timeline-heading">
                     <h3 className="timeline-title">Wedding Day</h3>
                     <MdOutlineDateRange size={15} className="iconm" />
-                    <span className="date">Dec 20, 2023</span>
+                    <span className="date">May 19, 2025</span>
                   </div>
                   <div className="timeline-body">
                     <p>
