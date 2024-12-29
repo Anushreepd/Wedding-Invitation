@@ -34,9 +34,9 @@ const WeadingDetails = () => {
                 ></div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
-                    <h3 className="timeline-title">First We Met</h3>
+                    <h3 className="timeline-title" style={{color:"hotpink"}}>First We Met</h3>
                     <MdOutlineDateRange size={15} className="iconm" />
-                    <span className="date">September 16, 2024</span>
+                    <span className="date" style={{fontWeight: "bold"}}>September 16, 2024</span>
                   </div>
                   <div className="timeline-body">
                     <p>
@@ -52,9 +52,9 @@ const WeadingDetails = () => {
                 ></div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
-                    <h3 className="timeline-title">Engagement Ceremony</h3>
+                    <h3 className="timeline-title" style={{color:"hotpink"}}>Engagement Ceremony</h3>
                     <MdOutlineDateRange size={15} className="iconm" />
-                    <span className="date">October 21, 2024</span>
+                    <span className="date" style={{fontWeight: "bold"}}>October 21, 2024</span>
                   </div>
                   <div className="timeline-body">
                     <p>
@@ -72,9 +72,9 @@ const WeadingDetails = () => {
                 ></div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
-                    <h3 className="timeline-title">Wedding Day</h3>
+                    <h3 className="timeline-title" style={{color:"hotpink"}}>Wedding Day</h3>
                     <MdOutlineDateRange size={15} className="iconm" />
-                    <span className="date">May 19, 2025</span>
+                    <span className="date" style={{fontWeight: "bold"}}>May 19, 2025</span>
                   </div>
                   <div className="timeline-body">
                     <p>
@@ -86,6 +86,13 @@ const WeadingDetails = () => {
                 </div>
               </li>
             </ul>
+            <span className="heading-bottom">
+                <IoIosStar size={25} color="HotPink " />
+                <IoIosStar size={25} color="HotPink " />
+                <IoIosStar size={25} color="HotPink " />
+                <IoIosStar size={25} color="HotPink " />
+                <IoIosStar size={25} color="HotPink " />
+              </span>
           </div>
         </div>
       </div>

@@ -9,13 +9,13 @@ import Contact from "./components/Contact";
 function App() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}  
       <WeadingDate />
       <CountDown />
       <Invitation />
       <Weadingloaction />
       <WeadingDetails />
-      <Contact />
+      {/* <Contact /> */}
     </>
   );
 }
