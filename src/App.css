@@ -45,7 +45,7 @@ h3,
 h4,
 h5,
 h6 {
-  line-height: 1.5;
+  line-height: 2.5;
   font-weight: inherit;
 }
 
@@ -504,9 +504,10 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu {
   height: 100vh;
   position: relative;
   z-index: 1;
-  background-image: url(./images/slider-1-1600x900.jpg);
   background-size: cover;
   color: #fff;
+  width: 100%;
+  overflow: hidden;
 }
 
 .main-slider:after {
@@ -522,6 +523,17 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu {
 
 .slider-content .date {
   margin: 10px 0 0;
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+.center-fit {
+  display: block;
+  max-height: 10%;
+  max-width: 80%;
+  margin: 0 auto;
+  object-fit: cover;
 }
 
 .slider-content i {
@@ -537,6 +549,7 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu {
   font-size: 0.8em;
   color: #e45f74;
 }
+
 
 /* ---------------------------------
 5. STORY AREA

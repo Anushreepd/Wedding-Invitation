@@ -10,4 +10,23 @@
 
 .display-table-cell {
   margin-bottom: 25%;
+  position: relative;
+}
+
+.redirect-button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  padding: 7px 14px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.redirect-button:hover {
+  opacity: 1;
 }
