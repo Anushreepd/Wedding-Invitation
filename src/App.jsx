@@ -17,9 +17,7 @@ const App = () => {
       <Routes>
       <Route path="/" element={<WeadingDate />} />
         <Route path="/Banner" element={<Banner />} />
-        <Route path="/CountDown" element={<CountDown />} />
         <Route path="/Invitation" element={<Invitation />} />
-        <Route path="/Weadingloaction" element={<Weadingloaction />} />
         <Route path="/WeadingDetails" element={<WeadingDetails />} />
 
       </Routes>

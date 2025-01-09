@@ -25,8 +25,53 @@
   border: none;
   cursor: pointer;
   border-radius: 8px;
+  transition: opacity 0.3s;
 }
 
 .redirect-button:hover {
   opacity: 1;
 }
+
+.text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(3, 22, 37);
+}
+
+.masked-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.decorative-image {
+  height: 87%;
+  object-fit: cover;
+}
+
+.image-container {
+position: relative;
+width:100%;
+height: 100vh;
+background: #333;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+}
+
+.redirect-button {
+  font-size: 14px;
+  padding: 10px 20px;
+  display: "block";
+  margin: "20px auto";
+}
+

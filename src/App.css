@@ -49,6 +49,12 @@ h6 {
   font-weight: inherit;
 }
 
+@media only screen and (max-width: 992px) {
+  h3 {
+    line-height: 1;
+  }
+}
+
 h1,
 h2,
 h3 {
@@ -595,26 +601,34 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu {
   background: rgba(0, 0, 0, 0.3);
 }
 
+/* Countdown container to display items in one row */
+.remaining-time {
+  display: flex; /* Flexbox to align items horizontally */
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; /* Vertically align items */
+}
+
+/* Time-circle styling (day, hour, minute, second) */
 .remaining-time .time-sec {
   position: relative;
   display: inline-block;
-  margin: 0 20px;
-  margin-bottom: 30px;
-  height: 120px;
-  width: 120px;
-  padding-top: 25px;
-  border-radius: 100px;
-  border: 1px solid #f14e95;
-  color: #fff;
-  background: rgba(241, 78, 149, 0.8);
-
-  animation: pulse 1s ease infinite;
+  margin: 0 10px; /* Adds space between each time unit */
+  height: 70px; /* Set a smaller height for each circle */
+  width: 55px;
+  padding-top: 20px; /* Adjust the vertical alignment of the text */
+  border-radius: 75%; /* Make each div circular */
+  border: 1px solid #f14e95; /* Border color */
+  color: #fff; /* White text */
+  font-weight: bold;
+  background: rgba(241, 78, 149, 0.8); /* Background color */
+  animation: pulse 1s ease infinite; /* Animation for a "pulse" effect */
 }
 
+/* Title inside each circle (numbers for days, hours, minutes, seconds) */
 .remaining-time .time-sec .title {
-  font-size: 3em;
-  line-height: 1;
-  display: block;
+  font-size: 1.5em; /* Font size for numbers */
+  line-height: 1; /* Adjust text alignment */
+  display: block; /* Ensures the title stays inside the circle */
 }
 
 @keyframes pulse {
@@ -955,12 +969,13 @@ footer .copyright {
   margin-left: 5px;
 }
 .couple-half .desc-groom {
-  padding-right: 180px;
+  padding-right: 164px;
   text-align: right;
 }
 
 .couple-half .desc-bride {
   padding-left: 180px;
+  padding-top: 75px;
   text-align: left;
 }
 
@@ -976,8 +991,9 @@ footer .copyright {
 }
 
 .couple-half .desc-groom {
-  padding-right: 180px;
+  padding-right: 164px;
   text-align: right;
+  padding-top: 25px;
 }
 
 @media screen and (max-width: 768px) {
@@ -991,7 +1007,9 @@ footer .copyright {
 
   .couple-half {
     width: 100%;
-    margin: 18px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-right: 7px;
   }
 
   .groom,
@@ -1088,11 +1106,11 @@ footer .copyright {
 	--------------------------------- */
 
   .section {
-    padding: 50px 0 20px;
+    padding: 20px 0px;
   }
 
   .section .heading {
-    padding-bottom: 20px;
+    padding-bottom: 0px;
   }
 
   .section .heading .heading-bottom {

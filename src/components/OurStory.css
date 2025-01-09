@@ -1,18 +1,14 @@
 .timeline {
   list-style: none;
-  padding: 20px 0 20px;
+  padding: 20px 20px 20px 20px;
   position: relative;
 }
+
 .timeline:before {
-  top: 0;
-  bottom: 0;
-  position: absolute;
-  content: " ";
-  width: 1px;
-  background-color: #d4d4d4;
-  left: 50%;
-  margin-left: 0px;
+  display: none;
 }
+
+
 @media screen and (max-width: 480px) {
   .timeline:before {
     margin-left: -64px;
@@ -35,7 +31,7 @@
   width: 40%;
   float: left;
   border: 1px solid #d4d4d4;
-  padding: 30px;
+  padding: 10px 30px 30px 30px;
   position: relative;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -101,7 +97,7 @@
   .timeline > li > .timeline-badge {
     width: 60px;
     height: 60px;
-    margin-left: -20px !important;
+    margin-left: -31px !important;
   }
 }
 .timeline > li.timeline-inverted > .timeline-panel {
@@ -145,7 +141,7 @@
   }
 
   ul.timeline > li > .timeline-badge {
-    left: 15px;
+    left: 10px;
     margin-left: 0;
     top: 16px;
   }
