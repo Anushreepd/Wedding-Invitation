@@ -89,21 +89,6 @@ const Invitation = () => {
               </div>
             </div>
           </div>
-          <button
-            className="redirect-button"
-            onClick={() => navigate("/WeadingDetails")}
-            style={{
-              backgroundColor: "hotpink",
-              fontWeight: "bold",
-              fontSize: "16px",
-              padding: "10px 20px", 
-              width: "180px",
-              border: "2px solid black", 
-              cursor: "pointer", 
-            }}
-          >
-            Weading Details
-          </button>
         </div>
       </div>
     </section>
