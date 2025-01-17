@@ -17,13 +17,13 @@ const WeadingDetails = () => {
           {/* Our Story Section */}
           <div className="col-sm-12">
             <div className="heading">
-              <span>We Love Each Other</span>
+              <span style={{fontWeight: "bold"}}>We Love Each Other</span>
               <h2 className="title">Our Story</h2>
               <p style={{ textAlign: "center", margin: "0px 25px"}}>
                 To love a person is to see all of their magic, and to remind
                 them of it when they have forgotten.
               </p>
-              <p>Ah, life grows lovely where you are.</p>
+              <p style={{fontStyle: "italic"}}>Ah, life grows lovely where you are.</p>
               <span className="heading-bottom">
                 <IoIosStar size={25} color="HotPink " />
               </span>
@@ -50,7 +50,7 @@ const WeadingDetails = () => {
                   </div>
                   <div className="timeline-body">
                     <p>
-                      As it's an arranged marriage setup I met her in their home for the first time.
+                      Ours is an arranged marriage story, and it all begun with a meeting at bride's home.
                     </p>
                   </div>
                 </div>
@@ -101,45 +101,6 @@ const WeadingDetails = () => {
               </li>
             </ul>
           </div>
-
-          {/* Wedding Details Section */}
-          <div className="col-sm-1"></div>
-          <div className="col-sm-10">
-            <div className="heading">
-              <h2 className="title">Wedding Details</h2>
-              <span className="heading-bottom">
-                <IoIosStar size={25} color="HotPink " />
-              </span>
-            </div>
-
-            <div className="wedding-details margin-bottom">
-              <div className="w-detail left">
-                <MdOutlineCake color="HotPink" size={40} />
-                <h3 className="title">RECEPTION</h3>
-                <p>Sunday, May 18, 2025 <br/>
-                Time: 7PM Onwards <br/>
-                Urban Co-Operative Bank Samudaya Bhavan <br/>
-                2nd Main Road, Vinobha Nagar, Davanagere</p>
-              </div>
-              <div className="w-detail left">
-                <MdOutlineMusicNote color="HotPink" size={40} />
-                <h3 className="title">SANGEETH</h3>
-                <p>Sunday, May 18, 2025</p>
-                <p>Time: 9PM Onwards</p>
-                <p>Urban Co-Operative Bank Samudaya Bhavan</p>
-                <p>2nd Main Road, Vinobha Nagar, Davanagere</p>
-              </div>
-              <div className="w-detail right">
-                <GiDoubleNecklace color="HotPink" size={40} />
-                <h3 className="title">WEDDING CEREMONY</h3>
-                <p>Monday, May 19th, 2025</p>
-                <p>Time: 9.30AM</p>
-                <p>Urban Co-Operative Bank Samudaya Bhavan</p>
-                <p>2nd Main Road, Vinobha Nagar, Davanagere</p>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
     </section>

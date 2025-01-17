@@ -19,8 +19,6 @@ const App = () => {
           <Route path="/Invitation" element={<Invitation />} />
         </Routes>
     </Router>
-      <WeadingDetails />
-      <LocationDetails/>
     </div>
 
   );
