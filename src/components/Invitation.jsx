@@ -96,14 +96,13 @@ const Invitation = () => {
               backgroundColor: "hotpink",
               fontWeight: "bold",
               fontSize: "16px",
-              marginTop:"50px",
-              marginLeft: "70px",
               padding: "10px 20px", 
-              border: "2px solid hotpink", 
+              width: "180px",
+              border: "2px solid black", 
               cursor: "pointer", 
             }}
           >
-            WeadingDetails
+            Weading Details
           </button>
         </div>
       </div>
