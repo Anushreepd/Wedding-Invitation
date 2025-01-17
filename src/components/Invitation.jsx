@@ -95,8 +95,21 @@ const Invitation = () => {
         </div>
       </div>
       <WeadingDetails />
-      <EventDetails/>
-      <LocationDetails/>
+      <button
+            className="redirect-button"
+            onClick={() => navigate("/AllWeddingDetails")}
+            style={{
+              backgroundColor: "hotpink",
+              fontWeight: "bold",
+              fontSize: "16px",
+              padding: "10px 20px", 
+              width: "180px",
+              border: "2px solid black", 
+              cursor: "pointer", 
+            }}
+          >
+            Weading Details
+          </button>
     </section>
   );
 };
