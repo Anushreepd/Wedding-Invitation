@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { IoIosStar } from "react-icons/io";
-import image from "../images/calenderWithHeart.png";
+import image from "../images/calenderWithHeart.jpg";
 import "./WeadingDate.css";
 
 const Banner = () => {
@@ -105,7 +104,7 @@ const Banner = () => {
             backgroundSize: "cover",
             width: "80%",
             height: "60vh",
-            marginTop: "50px",
+            marginTop: "40px",
             marginBottom: "0px",
             borderRadius: "20px", 
             boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)", 
@@ -122,7 +121,7 @@ const Banner = () => {
     className="redirect-button"
     onClick={() => navigate("/Invitation")}
   >
-    Invitation
+    INVITATION
   </button>
 
 </div>

@@ -6,6 +6,7 @@ import { IoIosStar } from "react-icons/io";
 import WeadingDetails from "./WeadingDetails2";
 import LocationDetails from "./LocationDetails";
 import EventDetails from "./EventDetails";
+
 const Invitation = () => {
   const navigate = useNavigate();
   return (
@@ -95,21 +96,8 @@ const Invitation = () => {
         </div>
       </div>
       <WeadingDetails />
-      <button
-            className="redirect-button"
-            onClick={() => navigate("/AllWeddingDetails")}
-            style={{
-              backgroundColor: "hotpink",
-              fontWeight: "bold",
-              fontSize: "16px",
-              padding: "10px 20px", 
-              width: "180px",
-              border: "2px solid black", 
-              cursor: "pointer", 
-            }}
-          >
-            Weading Details
-          </button>
+           <EventDetails/>
+           <LocationDetails/>
     </section>
   );
 };

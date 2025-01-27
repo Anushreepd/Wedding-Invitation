@@ -524,7 +524,7 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu {
   left: 0;
   right: 0;
   z-index: -1;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0);
 }
 
 .slider-content .date {
@@ -1206,7 +1206,7 @@ footer .copyright {
 
   .w-detail {
     width: 100%;
-    padding: 0 0 0 30px;
+    padding: 0 0 0 10px;
     margin: 0 0 30px;
   }
 
