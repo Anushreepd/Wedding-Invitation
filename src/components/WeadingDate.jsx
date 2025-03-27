@@ -1,7 +1,5 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import sindurdan from "../images/ap.png";
-import hand from "../images/w22.png";
 import image from "../images/brideback2.png";
 
 import "./WeadingDate.css";

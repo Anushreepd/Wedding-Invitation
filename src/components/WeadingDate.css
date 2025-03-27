@@ -25,7 +25,6 @@
   border: none;
   cursor: pointer;
   border-radius: 8px;
-  transition: opacity 0.3s;
 }
 
 .redirect-button:hover {
@@ -75,3 +74,143 @@ overflow: hidden;
   margin: "20px auto";
 }
 
+.react-calendar {
+  width: 350px;
+  max-width: 100%;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  font-family: Arial, sans-serif;
+}
+
+/* Custom month title */
+.custom-month-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff4081;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Weekday labels (MON, TUE, etc.) */
+.react-calendar__month-view__weekdays {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #555;
+  text-align: center;
+}
+
+.react-calendar__tile:enabled:hover {
+  background: #f8bbd0;
+}
+
+/* Heartbeat animation for May 19 */
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  25% { transform: scale(1.1); }
+  50% { transform: scale(1); }
+  75% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Hide calendar navigation (previous/next month) */
+.react-calendar__navigation {
+  display: none !important;
+}
+
+
+/* 📌 Fix Calendar Box for Mobile */
+.calendar-container {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%; /* ✅ Make it responsive */
+  max-width: 350px; 
+}
+
+/* 📌 Responsive "May 2025" Heading */
+.month-title {
+  font-size: 24px; /* ✅ Reduce size for mobile */
+  font-weight: bold;
+  color: #ff4081;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.year {
+  font-size: 18px;
+  font-weight: normal;
+  color: black;
+}
+
+/* 📌 Fix Calendar Layout */
+.react-calendar {
+  width: 100% !important; /* ✅ Ensure it fits within the box */
+  border: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* 📌 Adjust Calendar Tiles for Mobile */
+.react-calendar__tile {
+  padding: 8px !important; /* ✅ Reduce padding */
+  font-size: 16px; /* ✅ Smaller font for mobile */
+  font-weight: bold;
+  color: black;
+  width: auto !important; /* ✅ Auto width to prevent breaking */
+  height: 40px !important;
+  text-align: center;
+}
+
+/* 📌 Fix May 19 Highlight & Heartbeat */
+.highlight-date {
+  background: #ff4081 !important;
+  color: white !important;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 36px; /* ✅ Smaller size */
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: relative;
+  animation: heartbeat 1.5s infinite;
+}
+
+
+/* 📌 Adjust INVITATION Button for Mobile */
+.redirect-button{
+  width: 80%; /* ✅ Make button responsive */
+  max-width: 200px;
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* 📌 Make Everything Responsive */
+@media screen and (max-width: 400px) {
+  .calendar-container {
+    width: 95%;
+    margin-top: 0px;
+  }
+
+  .month-title {
+    font-size: 20px; /* ✅ Even smaller for very small screens */
+  }
+
+  .react-calendar__tile {
+    font-size: 14px; /* ✅ Adjust text size */
+    padding: 6px;
+  }
+
+  .redirect-button{
+    margin-top: 30px;
+  }
+}
