@@ -195,22 +195,51 @@ overflow: hidden;
 }
 
 /* 📌 Make Everything Responsive */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 775px) {
   .calendar-container {
-    width: 95%;
-    margin-top: 0px;
+    width: 90%; /* Increase width */
+    max-width: 500px; /* Make it wider */
+    margin-top: 20px; /* More gap between time & calendar */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the calendar */
+    justify-content: center;
   }
-
+  
+  .react-calendar {
+    width: 100% !important; /* Use full container width */
+    max-width: 500px; /* Keep it wide */
+    font-size: 18px;
+  }
+  
+  /* Adjust tiles inside the calendar */
+  .react-calendar__tile {
+    font-size: 16px !important; 
+    text-align: center;
+  }
+  
+  /* Center the entire calendar block */
+  .display-table.center-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Stop pushing elements */
+    height: auto; /* Fix unnecessary space */
+  }
+  
   .month-title {
     font-size: 20px; /* ✅ Even smaller for very small screens */
-  }
-
-  .react-calendar__tile {
-    font-size: 14px; /* ✅ Adjust text size */
-    padding: 6px;
   }
 
   .redirect-button{
     margin-top: 30px;
   }
 }
+.calendar-button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px; /* Adjust gap between calendar and button */
+}
+

@@ -1,12 +1,7 @@
 import React from "react";
 import "./OurStory.css";
-import img3 from "../images/Wedding.jpeg";
-import img2 from "../images/Engagement.jpeg";
-import img1 from "../images/firstmeet.png";
 import { IoIosStar } from "react-icons/io";
-import { MdOutlineDateRange } from "react-icons/md";
 import { GiDoubleNecklace } from "react-icons/gi";
-import { SiMinutemailer } from "react-icons/si";
 import { MdOutlineMusicNote, MdOutlineCake } from "react-icons/md";
 
 const EventDetails = () => {

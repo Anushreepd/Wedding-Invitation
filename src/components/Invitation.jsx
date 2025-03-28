@@ -1,14 +1,10 @@
 import React from "react";
-import groom from "../images/Abhay.jpeg";
-import { useNavigate } from "react-router-dom";
-import bride from "../images/Anu.jpeg";
 import { IoIosStar } from "react-icons/io";
 import WeadingDetails from "./WeadingDetails2";
 import LocationDetails from "./LocationDetails";
 import EventDetails from "./EventDetails";
 
 const Invitation = () => {
-  const navigate = useNavigate();
   return (
     <section className="section w-details-area center-text">
       <div className="container">
@@ -35,7 +31,7 @@ const Invitation = () => {
                 <div className="couple-half">
                   <div className="groom">
                     <img
-                      src={groom}
+                      src="/images/Abhay.jpeg" 
                       alt="groom"
                       className="img-responsive"
                       style={{
@@ -67,7 +63,7 @@ const Invitation = () => {
                 <div className="couple-half">
                   <div className="bride">
                     <img
-                      src={bride}
+                      src="/images/Anu.jpeg"
                       alt="bride"
                       className="img-responsive"
                       style={{

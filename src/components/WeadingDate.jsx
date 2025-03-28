@@ -1,6 +1,5 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import image from "../images/brideback2.png";
 
 import "./WeadingDate.css";
 
@@ -50,20 +49,16 @@ const WeadingDate = () => {
           </div>
 
         <div className="decorative-image">
-          <img src = {image}
+          <img src = "/images/brideback2.png"
           alt= "couple"
           className= "masked-image"/>
         </div>
-
-          {/* Slider content section */}
-          <div className="slider-content" style={{ marginTop: "auto", padding: "10px" }}>
             <button
               className="redirect-button"
               onClick={() => navigate("/Banner")}
             >
               TAP HERE!
             </button>
-          </div>
         
         </div>
       </div>
