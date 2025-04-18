@@ -4,6 +4,7 @@ import Banner from "./components/Banner";
 import WeadingDate from "./components/WeadingDate";
 import Invitation from "./components/Invitation";
 import AllWeddingDetails from "./components/AllWeddingDetails";
+import CalenderAndGallary from "./components/CalendarAndGallary";
 
 const App = () => {
   const [isMuted, setIsMuted] = useState(true);
@@ -75,6 +76,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<WeadingDate />} />
         <Route path="/Banner" element={<Banner />} />
+        <Route path="/CandG" element={<CalenderAndGallary />} />
         <Route path="/Invitation" element={<Invitation />} />
         <Route path="/AllWeddingDetails" element={<AllWeddingDetails />} />
       </Routes>

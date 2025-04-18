@@ -32,20 +32,15 @@ const Banner = () => {
 
   return (
     <div className="main-slider">
-      <div
-        className="display-table center-text"
-      >
-        <h5
+        <h3
           className="date"
           style={{
             color: "black",
-            fontWeight: "bold",
-            fontSize: "24px",
             textAlign: "center",
           }}
         >
           Save The Date
-        </h5>
+        </h3>
 
         <div className="slider-content">
           <div className="remaining-time">
@@ -90,9 +85,6 @@ const Banner = () => {
     />
   </div>
 
-  <button className="redirect-button" onClick={() => navigate("/Invitation")}>
-    INVITATION
-  </button>
 </div>
 
 
@@ -102,7 +94,7 @@ const Banner = () => {
         >
           INVITATION
         </button>
-      </div>
+
     </div>
   );
 };

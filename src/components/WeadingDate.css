@@ -14,7 +14,7 @@
 }
 
 .redirect-button {
-  position: absolute;
+  position: fixed;
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
@@ -29,6 +29,7 @@
 
 .redirect-button:hover {
   opacity: 1;
+  color: black;
 }
 
 .text-overlay {

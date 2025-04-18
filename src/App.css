@@ -507,7 +507,6 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu {
 --------------------------------- */
 
 .main-slider {
-  height: 100vh;
   position: relative;
   z-index: 1;
   background-size: cover;
