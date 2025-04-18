@@ -633,6 +633,12 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu {
   display: block; /* Ensures the title stays inside the circle */
 }
 
+.remaining-time .time-sec .title .text {
+  font-size: "10px"; /* Font size for numbers */
+  line-height: 1; /* Adjust text alignment */
+  display: block; /* Ensures the title stays inside the circle */
+}
+
 @keyframes pulse {
   0% {
     transform: scale(1);

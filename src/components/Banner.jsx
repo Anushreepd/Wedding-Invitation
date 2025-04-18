@@ -49,7 +49,8 @@ const Banner = () => {
               style={{ display: "flex", justifyContent: "center" }}
             >
               <div className="time-sec">
-                <span className="title">{timeLeft.days}</span> Days  
+                <span className="title">{timeLeft.days}</span>
+                <span> Days  </span>
               </div>
               <div className="time-sec">
                 <span className="title">{timeLeft.hours}</span> Hours
