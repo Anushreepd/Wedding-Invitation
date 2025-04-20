@@ -15,12 +15,15 @@
     "@fortawesome/free-regular-svg-icons": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@tailwindcss/vite": "^4.1.4",
+    "framer-motion": "^12.7.4",
     "react": "^18.2.0",
     "react-calendar": "^5.1.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0",
     "react-image-gallery": "^1.4.0",
     "react-router-dom": "^7.1.1",
+    "tailwindcss": "^4.1.4",
     "wedding-invitation": "file:"
   },
   "devDependencies": {

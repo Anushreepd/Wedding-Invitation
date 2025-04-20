@@ -1,6 +1,7 @@
 import React from "react";
 import Banner from "./Banner";
 import ImageGalleryComponent from "./ImageGalleryComponent";
+import ImageSlider from "./ImageSlider";
 const CalendarAndGallary = () => {
   return (
     <section className="section">
@@ -9,13 +10,7 @@ const CalendarAndGallary = () => {
         className="display-table center-text"
       >
         <Banner/>
-        <ImageGalleryComponent/>
-        <button
-          className="redirect-button"
-          onClick={() => navigate("/Invitation")}
-        >
-          INVITATION
-        </button>
+        <ImageSlider/>
         </div>
       </div>
     </section>
