@@ -47,12 +47,20 @@
 
 .invitation-button {
   background-color:#f14e95;
-  color: black;
+  color: white;
   cursor: pointer;
   border-radius: 8px;
   width: 150px;
   border: 1px solid black;
   position: "absolute";
+  margin-top: 150px;
+  width: 35%;
+  height: 35px;
+  display: grid;
+  align-items: center;
+}
+.invitation-button:hover {
+  color: black;
 }
 
 .redirect-button:hover {

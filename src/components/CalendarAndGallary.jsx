@@ -13,11 +13,9 @@ const CalendarAndGallary = () => {
       >
         <Banner/>
         <ImageSlider/>
-        <div className="invitation-button" style={{marginTop: "200px", width: "35%", height: "35px", display: "flex", justifyContent: "center"}}>
-            <button onClick={() => navigate("/Invitation")}>
+            <button className="invitation-button" onClick={() => navigate("/Invitation")}>
               <div style={{fontSize: "20px", fontFamily: "PlayBall, cursive"}}>Invitation</div>
             </button>
-        </div>
         </div>
       </div>
     </section>

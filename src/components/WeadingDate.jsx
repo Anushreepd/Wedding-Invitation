@@ -57,7 +57,10 @@ const WeadingDate = () => {
               className="redirect-button"
               onClick={() => navigate("/Banner")}
             >
+              <div style={{fontSize: "20px", fontFamily:"PlayBall, cursive"}}>
               TAP HERE!
+              </div>
+              
             </button>
         
         </div>
