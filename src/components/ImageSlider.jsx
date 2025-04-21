@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import city1 from "/images/firstmeet.png";
 import city2 from "/images/Engagement.jpeg";
@@ -10,6 +10,19 @@ import { useNavigate } from "react-router-dom";
 const ImageSlider = () => {
   const navigate = useNavigate();
   const [positionIndexes, setPositionIndexes] = useState([0, 1, 2, 3, 4]);
+
+   useEffect(() => {
+      const interval = setInterval(() => {
+        setPositionIndexes((prevIndexes) => {
+          const updatedIndexes = prevIndexes.map(
+            (prevIndex) => (prevIndex + 1) % 5
+          );
+          return updatedIndexes;
+        });
+      }, 1200);
+  
+      return () => clearInterval(interval);
+    }, []);
 
   const handleNext = () => {
     setPositionIndexes((prevIndexes) => {
@@ -42,7 +55,16 @@ const ImageSlider = () => {
     right1: { x: "50%", scale: 0.7, zIndex: 3 },
   };
   return (
-    <div style={{display:"flex", justifyContent: "center"}} >
+    <div style={{display: "grid"}}>
+      <br/>
+      <br/>
+      <br/>
+      <h2 style={{
+            color: "black",
+            textAlign: "center",
+          }}> Memory Lane </h2>
+          <br/>
+        <div style={{display:"flex", justifyContent: "center"}} >
       {images.map((image, index) => (
         <motion.img
           key={index}
@@ -56,7 +78,7 @@ const ImageSlider = () => {
           style={{ width: "40%", position:"absolute" }}
         />
       ))}
-      <div style={{display:"flex", marginTop:"118px", position:"absolute", justifyContent:"center", paddingBottom:"100px"}}>
+      {/* <div style={{display:"flex", marginTop:"118px", position:"absolute", justifyContent:"center", paddingBottom:"100px"}}>
         <button
           className="motion-button-right"
           onClick={handleBack}
@@ -77,7 +99,8 @@ const ImageSlider = () => {
         >
           INVITATION
         </button>
-      </div>
+      </div> */}
+    </div>
     </div>
   );
 };

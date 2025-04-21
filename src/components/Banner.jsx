@@ -32,7 +32,7 @@ const Banner = () => {
 
   return (
     <div className="main-slider">
-        <h3
+        <h2
           className="date"
           style={{
             color: "black",
@@ -40,7 +40,7 @@ const Banner = () => {
           }}
         >
           Save The Date
-        </h3>
+        </h2>
 
         <div className="slider-content">
           <div className="remaining-time">
@@ -83,18 +83,11 @@ const Banner = () => {
       minDetail="month"
       maxDetail="month"
       showNavigation={false}
+      tileDisabled={({a, date, view}) => date.getDay() !== 19}
     />
   </div>
 
 </div>
-
-
-        <button
-          className="redirect-button"
-          onClick={() => navigate("/Invitation")}
-        >
-          INVITATION
-        </button>
 
     </div>
   );
