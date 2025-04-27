@@ -82,7 +82,6 @@ const Banner = () => {
       minDetail="month"
       maxDetail="month"
       showNavigation={false}
-      tileDisabled={({a, date, view}) => date.getDay() !== 19}
     />
   </div>
 

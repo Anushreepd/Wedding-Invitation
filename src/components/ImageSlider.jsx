@@ -24,25 +24,6 @@ const ImageSlider = () => {
       return () => clearInterval(interval);
     }, []);
 
-  const handleNext = () => {
-    setPositionIndexes((prevIndexes) => {
-      const updatedIndexes = prevIndexes.map(
-        (prevIndex) => (prevIndex + 1) % 5
-      );
-      return updatedIndexes;
-    });
-  };
-
-  const handleBack = () => {
-    setPositionIndexes((prevIndexes) => {
-      const updatedIndexes = prevIndexes.map(
-        (prevIndex) => (prevIndex + 4) % 5
-      );
-
-      return updatedIndexes;
-    });
-  };
-
   const images = [city1, city2, city3, planet1, planet2];
 
   const positions = ["center", "left1", "left", "right", "right1"];
@@ -78,28 +59,6 @@ const ImageSlider = () => {
           style={{ width: "40%", position:"absolute" }}
         />
       ))}
-      {/* <div style={{display:"flex", marginTop:"118px", position:"absolute", justifyContent:"center", paddingBottom:"100px"}}>
-        <button
-          className="motion-button-right"
-          onClick={handleBack}
-        >
-          Back
-        </button>
-        <button
-          className="motion-button-left"
-          onClick={handleNext}
-        >
-          Next
-        </button>
-      </div>
-      <div>
-      <button
-          className="invitation-button"
-          onClick={() => navigate("/Invitation")}
-        >
-          INVITATION
-        </button>
-      </div> */}
     </div>
     </div>
   );
