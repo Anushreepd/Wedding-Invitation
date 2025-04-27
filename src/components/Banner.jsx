@@ -41,7 +41,7 @@ const Banner = () => {
         >
           Save The Date
         </h2>
-
+        <br/>
         <div className="slider-content">
           <div className="remaining-time">
             <div
@@ -63,7 +63,7 @@ const Banner = () => {
             </div>
           </div>
         </div>
-
+          <br/>
         <div className="calendar-button-wrapper">
   <div className="calendar-container">
     <h2 className="month-title">
