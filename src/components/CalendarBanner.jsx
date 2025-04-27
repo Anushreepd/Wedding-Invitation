@@ -1,9 +1,7 @@
 import React from "react";
 import Banner from "./Banner";
-import ImageGalleryComponent from "./ImageGalleryComponent";
-import ImageSlider from "./ImageSlider";
 import { useNavigate } from "react-router-dom";
-const CalendarAndGallary = () => {
+const CalendarBanner = () => {
   const navigate = useNavigate();
   return (
     <section className="section">
@@ -12,7 +10,6 @@ const CalendarAndGallary = () => {
         className="display-table center-text"
       >
         <Banner/>
-        <ImageSlider/>
         <div style={{display: "flex", justifyContent: "center"}}>
           <button className="invitation-button" onClick={() => navigate("/Invitation")}>
             <div style={{fontSize: "20px", fontFamily: "PlayBall, cursive"}}>Invitation</div>
@@ -24,4 +21,4 @@ const CalendarAndGallary = () => {
   );
 };
 
-export default CalendarAndGallary;
+export default CalendarBanner;

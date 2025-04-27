@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import city1 from "/images/firstmeet.png";
-import city2 from "/images/Engagement.jpeg";
-import city3 from "/images/Wedding.jpeg";
-import planet1 from "/images/Engagement.jpeg";
-import planet2 from "/images/Wedding.jpeg";
+import city1 from "/images/first.jpg";
+import city2 from "/images/second.jpg";
+import city3 from "/images/third.jpg";
+import planet1 from "/images/fourth.jpg";
+import planet2 from "/images/Engagement.jpeg";
 import { useNavigate } from "react-router-dom";
 
 const ImageSlider = () => {
@@ -23,25 +23,6 @@ const ImageSlider = () => {
   
       return () => clearInterval(interval);
     }, []);
-
-  const handleNext = () => {
-    setPositionIndexes((prevIndexes) => {
-      const updatedIndexes = prevIndexes.map(
-        (prevIndex) => (prevIndex + 1) % 5
-      );
-      return updatedIndexes;
-    });
-  };
-
-  const handleBack = () => {
-    setPositionIndexes((prevIndexes) => {
-      const updatedIndexes = prevIndexes.map(
-        (prevIndex) => (prevIndex + 4) % 5
-      );
-
-      return updatedIndexes;
-    });
-  };
 
   const images = [city1, city2, city3, planet1, planet2];
 
@@ -78,28 +59,6 @@ const ImageSlider = () => {
           style={{ width: "40%", position:"absolute" }}
         />
       ))}
-      {/* <div style={{display:"flex", marginTop:"118px", position:"absolute", justifyContent:"center", paddingBottom:"100px"}}>
-        <button
-          className="motion-button-right"
-          onClick={handleBack}
-        >
-          Back
-        </button>
-        <button
-          className="motion-button-left"
-          onClick={handleNext}
-        >
-          Next
-        </button>
-      </div>
-      <div>
-      <button
-          className="invitation-button"
-          onClick={() => navigate("/Invitation")}
-        >
-          INVITATION
-        </button>
-      </div> */}
     </div>
     </div>
   );

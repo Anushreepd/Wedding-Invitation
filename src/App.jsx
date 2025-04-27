@@ -1,10 +1,10 @@
 import React, { useState, useRef, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Banner from "./components/Banner";
 import WeadingDate from "./components/WeadingDate";
 import Invitation from "./components/Invitation";
 import AllWeddingDetails from "./components/AllWeddingDetails";
 import CalenderAndGallary from "./components/CalendarAndGallary";
+import CalendarBanner from "./components/CalendarBanner";
 
 const App = () => {
   const [isMuted, setIsMuted] = useState(true);
@@ -75,8 +75,8 @@ const App = () => {
       {/* App Routes */}
       <Routes>
         <Route path="/" element={<WeadingDate />} />
-        {/* <Route path="/Banner" element={<Banner />} /> */}
-        <Route path="/Banner" element={<CalenderAndGallary />} />
+        <Route path="/Banner" element={<CalendarBanner />} />
+        {/* <Route path="/Banner" element={<CalenderAndGallary />} /> */}
         <Route path="/Invitation" element={<Invitation />} />
         <Route path="/AllWeddingDetails" element={<AllWeddingDetails />} />
       </Routes>

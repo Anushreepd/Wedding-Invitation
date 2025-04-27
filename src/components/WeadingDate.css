@@ -25,6 +25,7 @@
   border: none;
   cursor: pointer;
   border-radius: 8px;
+  width: 150px;
 }
 
 .motion-button-right {
@@ -54,10 +55,12 @@
   border: 1px solid black;
   position: "absolute";
   margin-top: 150px;
-  width: 35%;
+  width: 150px;
   height: 35px;
   display: grid;
   align-items: center;
+  position: fixed;
+  bottom: 20px;
 }
 .invitation-button:hover {
   color: black;
@@ -223,8 +226,6 @@ overflow: hidden;
 
 /* 📌 Adjust INVITATION Button for Mobile */
 .redirect-button{
-  width: 80%; /* ✅ Make button responsive */
-  max-width: 200px;
   margin-top: 15px;
   padding: 10px;
   font-size: 16px;
