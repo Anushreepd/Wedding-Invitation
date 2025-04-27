@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import city1 from "/images/firstmeet.png";
-import city2 from "/images/Engagement.jpeg";
-import city3 from "/images/Wedding.jpeg";
-import planet1 from "/images/Engagement.jpeg";
-import planet2 from "/images/Wedding.jpeg";
+import city1 from "/images/first.jpg";
+import city2 from "/images/second.jpg";
+import city3 from "/images/third.jpg";
+import planet1 from "/images/fourth.jpg";
+import planet2 from "/images/Engagement.jpeg";
 import { useNavigate } from "react-router-dom";
 
 const ImageSlider = () => {
