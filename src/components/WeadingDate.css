@@ -25,6 +25,7 @@
   border: none;
   cursor: pointer;
   border-radius: 8px;
+  width: 150px;
 }
 
 .motion-button-right {
@@ -223,8 +224,6 @@ overflow: hidden;
 
 /* 📌 Adjust INVITATION Button for Mobile */
 .redirect-button{
-  width: 80%; /* ✅ Make button responsive */
-  max-width: 200px;
   margin-top: 15px;
   padding: 10px;
   font-size: 16px;
