@@ -59,6 +59,8 @@
   height: 35px;
   display: grid;
   align-items: center;
+  position: fixed;
+  bottom: 20px;
 }
 .invitation-button:hover {
   color: black;
