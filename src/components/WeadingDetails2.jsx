@@ -73,7 +73,7 @@ const img3 = "/images/Wedding.jpeg";
                   </div>
                   <div className="timeline-body">
                     <p>
-                      It was time when we realized that we wanted to spend the rest of your life with each other. We started the beginning of togetherness.
+                      It was time when we realized that we wanted to spend the rest of our life with each other. We started the beginning of togetherness.
                     </p>
                   </div>
                 </div>
